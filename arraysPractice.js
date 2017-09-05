@@ -5,7 +5,9 @@ var arr = [10,20,30];
 //Create a function named 'first' that is given 'arr' as the argument and  returns the first item in the given array.
 
   //Code Here
-
+  function first(arr){
+    return arr[0];
+  }
 
 //Next problem
 
@@ -17,15 +19,30 @@ var arr = [40,50,60];
 
   //Code Here
 
+  function last(arr){
+    return arr[arr.length-1];
+  }
 
 //Next Problem
 
 
-var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
+var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland']; //, 'Chelsey', 'Ireland'
 //Create a function named 'looper' that is given family as it's only argument, loops through the given array, and alerts every item in the array.
 
   //Code Here
+  // function looper(){
+  //   var alertMe = family.map(function(e){
+  //     return alert(e);
+  //   });
+  //   return alertMe;
+  // }
 
+  function looper(famArr){
+    console.log(arguments);
+    for(var i = 0; i < famArr.length; i++ ){
+      alert(famArr[i]);
+    }
+  }
 
 //Next problem
 
@@ -36,6 +53,16 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
   //Code Here
 
+  // This works but breaks the test :(
+
+  // var reversedLooper = lettersArray => lettersArray.reverse().map( e => alert(e));
+
+  function reversedLooper(lettersArray){
+    for(var i = lettersArray.length -1; i >= 0; i--){
+      alert(lettersArray[i]);
+    }
+  }
+  // reversedLooper(letters);
 
 //Next Problem
 
@@ -45,12 +72,9 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
   //Code Here
 
+  var evenFinder = arr => arr.filter(e => e%2===0);
 
-
-
-  
-
-
+//All done for now...
 
 // =============================================
 // =============================================
